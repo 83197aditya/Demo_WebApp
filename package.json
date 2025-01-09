@@ -4,13 +4,16 @@
   "description": "Demo Web App for learning purpose",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
+  "type": "commonjs",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
     "@eslint/js": "^9.17.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^9.17.0",
     "eslint-plugin-react": "^7.37.3",
     "globals": "^15.14.0",
