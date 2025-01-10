@@ -1,5 +1,4 @@
-export default {
-    transform: {
-        "^.+\\.js$": "babel-jest",
-    },
-};
+module.exports = {
+    testEnvironment: "jest-environment-jsdom", // Ensure this is set
+  };
+  
