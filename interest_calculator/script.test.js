@@ -1,5 +1,5 @@
 // script.test.js
-import { calculateInterest } from 'interest_calculator/src/script.js';
+import { calculateInterest } from './src/script.js';
 import { describe, test, expect } from '@jest/globals';
 
 describe('calculateInterest function', () => {

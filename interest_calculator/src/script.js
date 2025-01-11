@@ -7,4 +7,4 @@ function calculateInterest(principal, rate, time) {
 }
 
 // Export the function for testing
-export default { calculateInterest };
+export { calculateInterest }; 
