@@ -1,3 +1,4 @@
+import { calculateInterest } from './interest_calculator/src/script.js';
 // DOM-related code (executed only in the browser)
 if (typeof document !== "undefined") {
     document.getElementById("calculateButton").addEventListener("click", function () {

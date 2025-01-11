@@ -1,5 +1,6 @@
 // script.test.js
-const { calculateInterest } = require('./script');
+import { calculateInterest } from 'interest_calculator/src/script.js';
+import { describe, test, expect } from '@jest/globals';
 
 describe('calculateInterest function', () => {
     test('Correctly calculates simple interest', () => {
