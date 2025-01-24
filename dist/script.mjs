@@ -1,11 +1,6 @@
-"use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.calculateInterest = calculateInterest;
 // Function to calculate simple interest
-function calculateInterest(principal, rate, time) {
+export function calculateInterest(principal, rate, time) {
   if (principal <= 0 || rate <= 0 || time <= 0) {
     throw new Error("Values must be positive numbers");
   }
