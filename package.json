@@ -4,8 +4,8 @@
   "description": "Demo Web App for learning purpose",
   "main": "index.js",
   "scripts": {
-    "build": "babel interest_calculator/src --out-dir dist --source-maps",
-    "watch": "babel interest_calculator/src --out-dir dist --source-maps --watch",
+    "build": "babel dist --out-dir dist --source-maps",
+    "watch": "babel dist --out-dir dist --source-maps --watch",
     "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
