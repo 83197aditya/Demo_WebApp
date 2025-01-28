@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel dist --out-dir dist --source-maps",
     "watch": "babel dist --out-dir dist --source-maps --watch",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "pretty": "prettier --check .",
@@ -28,6 +28,8 @@
     "jest-environment-jsdom": "^29.7.0"
   },
   "jest": {
+    "transform": {},
     "testEnvironment": "jest-environment-jsdom"
-  }
+  },
+   "type": "module"
 }
