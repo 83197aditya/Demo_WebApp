@@ -1,6 +1,5 @@
-
 // Function to calculate simple interest
-export function calculateInterest(principal, rate, time) {
+function calculateInterest(principal, rate, time) {
   if (principal <= 0 || rate <= 0 || time <= 0) {
     throw new Error("Values must be positive numbers");
   }
@@ -8,4 +7,5 @@ export function calculateInterest(principal, rate, time) {
 }
 
 // Export the function for testing
+export { calculateInterest };
 //# sourceMappingURL=script.js.map

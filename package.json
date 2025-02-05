@@ -4,9 +4,9 @@
   "description": "Demo Web App for learning purpose",
   "main": "index.js",
   "scripts": {
-    "build": "babel interest_calculator/src --out-dir dist --source-maps",
-    "watch": "babel interest_calculator/src --out-dir dist --source-maps --watch",
-    "test": "jest",
+    "build": "babel dist --out-dir dist --source-maps",
+    "watch": "babel dist --out-dir dist --source-maps --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "pretty": "prettier --check .",
@@ -18,7 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.26.4",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-env": "^7.26.7",
     "@eslint/js": "^9.17.0",
     "babel-jest": "^29.7.0",
     "eslint": "^9.18.0",
@@ -28,6 +28,8 @@
     "jest-environment-jsdom": "^29.7.0"
   },
   "jest": {
+    "transform": {},
     "testEnvironment": "jest-environment-jsdom"
-  }
+  },
+   "type": "module"
 }
