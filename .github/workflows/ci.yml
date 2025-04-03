@@ -35,6 +35,7 @@ jobs:
       - name: Run tests
         run: npm test
 
+
       # Build the project (Ensure dist/ is created)
       - name: Build Project
         run: npm run build
