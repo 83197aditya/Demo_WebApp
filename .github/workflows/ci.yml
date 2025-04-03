@@ -34,9 +34,20 @@ jobs:
       # Run Unit Tests
       - name: Run tests
         run: npm test
-      
+
+      # Build the project (Ensure dist/ is created)
+      - name: Build Project
+        run: npm run build
+
+      # Debug: Check if dist/ exists
+      - name: Debug Build Output
+        run: ls -la dist || echo "⚠️ dist folder not found!"
+
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: dist
+          clean: true  # Ensures old files are removed
